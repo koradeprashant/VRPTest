@@ -95,6 +95,9 @@ public class App {
 		new VrpXMLWriter(problem, solutions).write("/data/algoOutput.xml");
 	}
 	
+	/*
+	 *  Using hardcoded speed value of 0.003(20 KM/Hour)
+	 */
 	private static void setNodeDistances(Builder matrix) {
 		matrix.addTransportTime(String.valueOf(1), String.valueOf(2), 25970 * 0.003);
 		matrix.addTransportDistance(String.valueOf(1), String.valueOf(2), 25970);
