@@ -79,7 +79,7 @@ public class App {
 		vrpBuilder.setRoutingCost(distanceMatrix.build());
 		
 		VehicleRoutingProblem problem = vrpBuilder.build();
-		VehicleRoutingAlgorithmBuilder algoBuilder = new VehicleRoutingAlgorithmBuilder(problem, "/data/algoConfig.xml");
+		VehicleRoutingAlgorithmBuilder algoBuilder = new VehicleRoutingAlgorithmBuilder(problem, "algoConfig.xml");
         algoBuilder.addCoreConstraints();
         algoBuilder.addDefaultCostCalculators();
 
